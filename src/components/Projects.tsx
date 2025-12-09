@@ -195,7 +195,7 @@ const Projects = () => {
               More Projects Coming Soon
             </h3>
             <p className="text-[#c1c9d6]">
-              I'm continuously working on new projects and improving my skills. 
+              I&apos;m continuously working on new projects and improving my skills. 
             </p>
           </div>
         </motion.div>
