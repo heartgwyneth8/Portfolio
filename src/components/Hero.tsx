@@ -5,7 +5,7 @@ import { Github, Linkedin, Mail, ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-[#eee8df]">
+    <section id="home" className="min-h-[145vh] flex items-center justify-center relative overflow-hidden bg-[#eee8df]">
       {/* Minimal background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-[#212842]/10 rounded-full blur-3xl"></div>
