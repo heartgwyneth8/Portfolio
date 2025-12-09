@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #eee8df;     /* Main light cream background */
+  --secondary: #212842;   /* Dark blue accent */
+  --accent: #212842;      /* Dark blue accent */
+  --dark: #d8d1c7;        /* Darker cream for contrast */
+}
+
+body {
+  background-color: var(--primary);
+  color: #212842;         /* Dark text for light background */
+}
+
+/* Custom classes with new colors */
+.glass {
+  background: rgba(238, 232, 223, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(33, 40, 66, 0.2);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #212842 0%, #eee8df 50%, #212842 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px -12px rgba(33, 40, 66, 0.15);
+}
+
+.btn-primary {
+  @apply bg-[#212842] text-[#eee8df] px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-[#1a1f36] hover:scale-105 hover:shadow-2xl;
+}
+
+.btn-secondary {
+  @apply border-2 border-[#212842] text-[#212842] px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-[#212842]/10 hover:scale-105;
+}
+
+.section-bg {
+  background: linear-gradient(135deg, #eee8df 0%, #d8d1c7 100%);
+  position: relative;
+}
